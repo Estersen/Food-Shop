@@ -1,12 +1,90 @@
 body {
   font-family: TT Norms Pro;
+  font-size: 16px;
+  color: #000;
 }
-.container {
+header {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+header .navbar-brand {
+  margin-right: 38px;
+}
+header nav {
   height: 100px;
+  width: 100%;
 }
-nav-link {
+header .dropdown-menu {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  border: none;
+  padding: 56px 0 0;
+  position: relative;
+  margin: 0;
+  top: -17px;
+  z-index: 0;
+}
+header .dropdown-menu .dropdown-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+  color: #333333;
+  padding: 9px 20px 9px 26px;
+  display: flex;
+  align-items: center;
+}
+header .dropdown-menu .dropdown-item span {
+  margin-right: 8px;
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+}
+.navbar-light .navbar-nav .nav-item.dropdown a {
+  position: relative;
+  z-index: 1;
+}
+.navbar-light .navbar-nav .nav-item .nav-link {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   color: #333333;
+  padding: 0 22px;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: #00AC4E;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.menu-right {
+  align-items: center;
+}
+.menu-right .menu-contact {
+  margin-right: 35px;
+}
+.menu-right .menu-contact a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+}
+.menu-right .menu-contact a img {
+  margin-right: 5px;
+}
+.menu-right .menu-user .card {
+  display: inherit;
+  border: none;
+}
+.menu-right .menu-user a,
+.menu-right .menu-user button {
+  margin-left: 30px;
+}
+.menu-right .menu-user button {
+  background: none;
+  border: none;
+  padding: 0;
 }
