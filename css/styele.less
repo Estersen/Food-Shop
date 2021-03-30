@@ -8,7 +8,7 @@ header {
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
 
-    .navbar-brand{
+    .navbar-brand {
         margin-right: 38px;
     }
 
@@ -47,72 +47,147 @@ header {
             }
         }
     }
-}
 
-.navbar-light .navbar-nav {
-    .nav-item {
-        &.dropdown {
+
+    .navbar-light .navbar-nav {
+        .nav-item {
+            &.dropdown {
+                a {
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+
+            .nav-link {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #333333;
+                padding: 0 22px;
+
+                &:hover {
+                    color: #00AC4E;
+                }
+            }
+        }
+
+
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    .menu-right {
+        align-items: center;
+
+        .menu-contact {
+            margin-right: 35px;
+
             a {
-                position: relative;
-                z-index: 1;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: #000000;
+                text-decoration: none;
+
+                img {
+                    margin-right: 5px;
+                }
             }
         }
 
-        .nav-link {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
-            color: #333333;
-            padding: 0 22px;
+        .menu-user {
+            .card {
+                display: inherit;
+                border: none;
+            }
 
-            &:hover {
-                color: #00AC4E;
+            a,
+            button {
+                margin-left: 30px;
+            }
+
+            button {
+                background: none;
+                border: none;
+                padding: 0;
             }
         }
     }
-
-
 }
 
-.dropdown-toggle::after {
-    display: none;
+.swiper-pagination-bullet {
+    background: #c4c4c4 !important;
+    opacity: 1 !important;
 }
 
-.menu-right {
-    align-items: center;
+.swiper-pagination-bullet-active {
+    width: 30px !important;
+    border-radius: 9px !important;
+    background: white !important;
+}
 
-    .menu-contact {
-        margin-right: 35px;
+.sectoin {
+    margin-top: 60px;
+    height: 254px;
 
-        a {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 21px;
-            color: #000000;
-            text-decoration: none;
 
+    .container {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, #F1F1FB 0%, #EBEBF5 100%);
+        box-shadow: 0px 0px 18.0727px rgba(0, 0, 0, 0.03);
+        border-radius: 18.0727px;
+        overflow: hidden;
+        position: relative;
+        padding: 0;
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .block {
+
+            
             img {
-                margin-right: 5px;
+                position: absolute;
+                top: 0;
+                right: 0;
+
             }
-        }
-    }
 
-    .menu-user {
-        .card {
-            display: inherit;
-            border: none;
-        }
+            h2 {
+                font-size: 31.6273px;
+                line-height: 38px;
+                color: #333333;
+                margin-top: 41px;
+                margin-left: 41px;
+            }
 
-        a,
-        button {
-            margin-left: 30px;
-        }
+            p {
+                font-size: 19.88px;
+                line-height: 24px;
+                color: #828282;
+                margin-top: 9px;
+                margin-left: 41px;
+            }
 
-        button {
-            background: none;
-            border: none;
-            padding: 0;
+            a {
+                background: #00AC4E;
+                border-radius: 4.51818px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 25.3018px;
+                line-height: 63px;
+                color: #FFFFFF;
+                padding: 11px 31px;
+                margin-left: 41px;
+                
+            }
         }
     }
 }
