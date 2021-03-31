@@ -134,7 +134,7 @@ section {
     height: 254px;
 
 
-    .container {
+    .home-banner {
         height: 100%;
         width: 100%;
         background: linear-gradient(180deg, #F1F1FB 0%, #EBEBF5 100%);
@@ -152,7 +152,7 @@ section {
 
         .block {
 
-            
+
             img {
                 position: absolute;
                 top: 0;
@@ -186,7 +186,56 @@ section {
                 color: #FFFFFF;
                 padding: 11px 31px;
                 margin-left: 41px;
-                
+
+            }
+        }
+    }
+}
+
+.home-menu {
+    .container {
+
+
+        .swiper-container-menu {
+            position: relative;
+            overflow: hidden;
+
+            .swiper-button-next:after,
+            .swiper-container-rtl .swiper-button-prev:after {
+                content: '';
+                background-image: url(../img/next.svg);
+                width: 14px;
+                height: 24px;
+                background-color: white;
+            }
+
+            .swiper-button-next,
+            .swiper-container-rtl .swiper-button-prev {
+                right: 0px;
+                justify-content: flex-end;
+            }
+
+
+
+            .swiper-button-prev.swiper-button-disabled,
+            .swiper-button-next.swiper-button-disabled {
+                display: none;
+            }
+
+            .swiper-button-prev,
+            .swiper-container-rtl .swiper-button-next {
+                display: none;
+            }
+
+            a {
+                font-family: TT Hoves;
+                font-size: 23.3333px;
+                line-height: 27px;
+                color: #4F4F4F;
+                text-decoration: none;
+                text-transform: uppercase;
+                flex-grow: 1;
+                width: auto !important;
             }
         }
     }
